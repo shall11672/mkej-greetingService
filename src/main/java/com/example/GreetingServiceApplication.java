@@ -14,12 +14,13 @@ public class GreetingServiceApplication {
 		SpringApplication.run(GreetingServiceApplication.class, args);
 	}
 }
+
 @RefreshScope
 @RestController
 class GreetingController
 {
 	
-	@Value("${greeting}")
+	//@Value("${greeting}")
 	private String greeting = "Hi";
 	
 	@RequestMapping(value="/greeting")
